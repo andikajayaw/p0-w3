@@ -1,14 +1,18 @@
 function hitungJumlahKata(kalimat) {
     // you can only write your code here!
-    var hitung = 0
-    kalimat = kalimat + ' '
+    // var hitung = 0
+    // kalimat = kalimat + ' '
 
-    for (var i = 0; i < kalimat.length; i++) {
-        if (kalimat[i] === ' ') {
-            hitung = hitung + 1
-        }
-    }
-    return hitung
+    // for (var i = 0; i < kalimat.length; i++) {
+    //     if (kalimat[i] === ' ') {
+    //         hitung = hitung + 1
+    //     }
+    // }
+    // return hitung
+
+    pisah = kalimat.split(" ")
+    console.log(pisah)
+    return pisah.length
 
 }
 
