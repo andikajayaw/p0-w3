@@ -1,5 +1,12 @@
 function cariMean(arr) {
     // you can only write your code here!
+    var sum = 0
+    var numCount = arr.length
+    for (var i in arr) {
+        sum = sum + arr[i]
+    }
+
+    return (Math.round(sum / numCount))
 }
 
 // TEST CASES
