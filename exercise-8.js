@@ -1,17 +1,17 @@
 function pasanganTerbesar(num) {
     // you can only write your code here!
-    var pasanganTerbesar = []
+    var pasanganTerbesar = 0
     var angkaPasangan = []
-        // tampungan = ''
-    for (var i = 0; i < String(num).length - 1; i++) {
-        console.log(String(num)[i], String(num)[i + 1])
-        angkaPasangan.push(String(num)[i] + String(num)[i + 1])
+    numString = String(num)
 
-        if (String(num)[i] + String(num)[i + 1] > pasanganTerbesar) {
-            pasanganTerbesar = String(num)[i] + String(num)[i + 1]
+    for (var i = 0; i < numString.length - 1; i++) {
+        angkaPasangan.push(numString[i] + numString[i + 1])
+
+        if (numString[i] + numString[i + 1] > pasanganTerbesar) {
+            pasanganTerbesar = numString[i] + numString[i + 1]
         }
     }
-    console.log(angkaPasangan)
+    // console.log(angkaPasangan)
     return pasanganTerbesar
 }
 

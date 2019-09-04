@@ -6,6 +6,7 @@ function tentukanDeretAritmatika(arr) {
     for (i = 0; i < arr.length - 1; i++) {
         aritmatika = arr[i + 1] - arr[i]
     }
+    console.log(angka, aritmatika)
     return angka === aritmatika
 }
 

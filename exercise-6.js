@@ -1,11 +1,11 @@
 function angkaPalindrome(num) {
     // you can only write your code here!
-    num++
+    num = num + 1
     while (true) {
         cekPalindrome = num === Number(num.toString().split('').reverse().join(''))
         console.log("Angka => " + num)
         if (cekPalindrome === false) {
-            num++
+            num = num + 1
         } else {
             return num
         }

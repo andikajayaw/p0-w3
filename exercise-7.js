@@ -1,18 +1,31 @@
 function hitungJumlahKata(kalimat) {
     // you can only write your code here!
-    // var hitung = 0
+    // var hitungKata = 0
     // kalimat = kalimat + ' '
 
     // for (var i = 0; i < kalimat.length; i++) {
     //     if (kalimat[i] === ' ') {
-    //         hitung = hitung + 1
+    //         hitungKata = hitungKata + 1
     //     }
     // }
-    // return hitung
+    // return hitungKata
 
-    pisah = kalimat.split(" ")
-    console.log(pisah)
-    return pisah.length
+    var result = []
+    var temp = ''
+
+    for (var i = 0; i <= kalimat.length; i++) {
+        if (kalimat[i] === ' ' || i === kalimat.length) {
+            result.push(temp)
+            temp = ''
+        } else {
+            temp = temp + kalimat[i]
+        }
+    }
+    return result.length
+
+    // pisah = kalimat.split(" ")
+    // console.log(pisah)
+    // return pisah.length
 
 }
 
